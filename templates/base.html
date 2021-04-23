@@ -43,16 +43,21 @@
 <div class="page_loader"></div>
 
 {% include "includes/topbar.html" %}
-
 {% include "includes/navbar.html" %}
-
-
-
 <!-- Body/ Main html content -->
 {% block content %}
 
 {% endblock %}
 <!-- End of Body/ Main html content -->
+
+<!-- Full Page Search -->
+<div id="full-page-search">
+    <button type="button" class="close">×</button>
+    <form action="https://storage.googleapis.com/theme-vessel/carhouse/index.html#" class="search-header">
+        <input type="search" value="" placeholder="type keyword(s) here. Eg: audi, benz etc" />
+        <button type="submit" class="btn btn-sm button-theme">Search</button>
+    </form>
+</div>
 
 {% include "includes/footer.html" %}
 
