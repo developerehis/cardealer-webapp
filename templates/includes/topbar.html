@@ -17,7 +17,7 @@
                     </li>
                     <li>
                         <a href="javascript:{document.getElementById('logout').submit()}" class="sign-out"><i class="fa fa-sign-out"></i> Logout</a>
-                        <form action="POST" action="{% url 'logout' %}" id="logout">
+                        <form method="POST" action="{% url 'logout' %}" id="logout">
                             {% csrf_token %}
                             <input type="hidden">
                         </form>

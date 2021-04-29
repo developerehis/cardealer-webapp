@@ -60,6 +60,5 @@ def dashboard(request):
 def logout(request):
     if request.method == 'POST':
         auth.logout(request)
-        messages.success(request, 'You are not logged out from your account')
-        return redirect('home')
-    return redirect('home')
+        messages.success(request, 'You are now logged out!')
+    return redirect('login')
